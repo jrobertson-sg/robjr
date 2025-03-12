@@ -1,0 +1,12 @@
+Package: robjr
+Title: Helper functions for the objr package
+Version: 0.0.0.9000
+Authors@R: 
+    person("Jamie", "Robertson", , "jamie.robertson@gov.scot", role = c("aut", "cre"))
+Description: Short commands to validate access, send and receive files to Objective Connect
+Depends: dplyr, objr
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+    license
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
