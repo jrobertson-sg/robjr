@@ -11,6 +11,7 @@
 
 
 pushConnect = function(doc,name,update = F){
+  checkAuthority()
   
   if(!exists("ocws")){idWorkspace()}
   

@@ -13,11 +13,11 @@ checkAuthority = function(){
     me <- my_user_id()
   } else {
     # Check token validity
-    result <- try(my_user_id())
+    result <- try(my_user_id(), silent = T)
     if(substr(result,1,5)[1] == "Error"){
       # Invalid token - refresh
       print("Token expired. Enter Objective Connect login details")
-      rm(token)
+      rm(token, envir = .GlobalEnv)
       me <- my_user_id()
       #print(me)
     } else {

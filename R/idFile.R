@@ -8,6 +8,7 @@
 
 
 idFile = function(){
+  checkAuthority()
   
   if(!exists("ocws")){
     idWorkspace()

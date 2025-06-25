@@ -7,6 +7,7 @@
 #' 
 
 idWorkspace = function(){
+  checkAuthority()
   
   wk = workspaces()
   
